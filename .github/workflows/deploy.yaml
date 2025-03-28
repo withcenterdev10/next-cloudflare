@@ -18,6 +18,9 @@ jobs:
       - name: Build
         run: npm run build:opennextjs
       - name: Deploy
-        run: npm run deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{secrets.CLOUDFLARE_API_TOKEN}}
+
       - name: Successful
         run: echo "Successfully deployed"
