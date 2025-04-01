@@ -8,7 +8,8 @@
     "build:opennextjs": "opennextjs-cloudflare build",
     "start": "next start",
     "lint": "next lint",
-    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "test:unit": "node --import tsx --test ./tests/unit-test/*test.ts",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"

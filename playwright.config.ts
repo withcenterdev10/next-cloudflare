@@ -6,8 +6,8 @@ const baseURL = `http://localhost:${PORT}`;
 export default defineConfig({
     timeout: 30 * 1000,
 
-    testDir: "tests/",
-    outputDir: "tests-results/",
+    testDir: "tests/e2e",
+    outputDir: "tests/tests-results/",
 
     retries: 2,
 
