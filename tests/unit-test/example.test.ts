@@ -1,4 +1,4 @@
-import { isEven } from "@/app/homepage/page";
+import { isEven } from "@/app/utils/isEven";
 import { describe, it } from "node:test";
 import assert from "assert";
 

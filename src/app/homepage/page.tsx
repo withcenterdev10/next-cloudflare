@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { isEven } from "../utils/isEven";
 
 export default function HomePage() {
     const [count, setCount] = useState<number>(0);
@@ -19,8 +20,4 @@ export default function HomePage() {
             <button onClick={Decrement}>Decrement</button>
         </div>
     );
-}
-
-export function isEven(number: number): boolean {
-    return number % 2 === 0;
 }
